@@ -1,0 +1,107 @@
+1.Write a program to get two integers from the user and print the sum of the two integers?
+#include<stdio.h>
+void main()
+{
+    int c,d;
+    printf("enter two numbers:");
+    scanf("%d%d",&c,&d);
+    
+    printf("the sum of two numbers:%d",(c+d));
+}
+
+2.Write a function to add two integers. 
+#include<stdio.h>
+int sum(int a, int b);
+void main()
+{
+    int x,y,add;
+    printf("\n enter the numbers:");
+    scanf("%d%d",&a,&b);
+    
+    add=sum(a,b);
+    printf("sum=%d",add);
+    
+}
+
+3.Write a program to get two float from the user and print the sum of the two float?
+#include<stdio.h>
+void main()
+{
+float x,y,sum;
+printf("enter two numbers");
+scanf("%f%f",&x,&y);
+sum=x+y;
+printf("%f",sum);
+}
+
+4.Write a function to add two float?
+#include<stdio.h>
+float sum(float x,float y);
+void main()
+{
+    float x,y,add;
+    printf("enter the numbers:");
+    scanf("%f%f",&x,&y);
+    
+    add=sum(x,y);
+    printf("total=%f",add);
+    
+}
+
+float sum(float x,float y)
+{
+    float add;
+    add=x+y;
+    return add;
+}
+
+5.Write a function to compare 2 numbers and test it.
+#include<stdio.h>
+int compare(int a,int b);
+void main()
+{
+    int a,b,large;
+    printf("enter the numbers:");
+    scanf("%d%d",&a,&b);
+    
+    large=compare(a,b);
+    printf("largest=%d",large);
+    
+}
+int compare(int a,int b)
+{
+    if(a>b)
+    return a;
+    else
+    return b;
+}
+
+6.Write a function to compare 3 numbers and test it.
+#include<stdio.h>
+int compare(int a,int b,int c);
+void main()
+{
+    int a,b,c,large;
+    printf("enter the numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    largest=compare(a,b,c);
+    printf("large=%d",largest);
+    
+}
+
+int compare(int a,int b,int c)
+{
+    if(a>b && a>c)
+    return a;
+    if(b>a && b>c)
+    return b;
+    else
+    return c;
+}
+
+
+
+
+
+
